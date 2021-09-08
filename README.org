@@ -1,5 +1,5 @@
 * TwoSix Emacs
 In this repository I keep my private Emacs Configuration.
 
-* TODO
+* TODOs
 - Add an automatic install command
