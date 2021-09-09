@@ -1,5 +1,7 @@
 * TwoSix Emacs
 In this repository I keep my private Emacs Configuration.
 
+The only dependency (for now) is the [[https://www.ibm.com/plex][IBM Plex]] font, which can be easily changed in config.org.
+
 * TODOs
 - Add an automatic install command for this configuration
