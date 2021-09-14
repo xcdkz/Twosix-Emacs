@@ -178,6 +178,10 @@
 
 #+end_src
 
+** End Message
+#+begin_src emacs-lisp 
+    (setq confirm-kill-emacs #'y-or-n-p)
+#+end_src
 * Ivy && Counsel
 ** Ivy
 
