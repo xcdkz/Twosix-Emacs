@@ -105,7 +105,7 @@
     ;; Global Settings
     (setq doom-themes-enable-bold t
           doom-themes-enable-italic t)
-    (load-theme 'doom-nord-light t)
+    (load-theme 'doom-solarized-light t)
     ;; Enable flashing mode-line on errors
     (doom-themes-visual-bell-config))
 #+end_src
@@ -531,5 +531,22 @@
         org-latex-pdf-process
         '("pdflatex -shell-escape -interaction nonstopmode -output-directory %o %f"
           "pdflatex -shell-escape -interaction nonstopmode -output-directory %o %f"))
+
+#+end_src
+
+* Ledger
+** Ledger-mode
+
+#+begin_src emacs-lisp
+
+  (defun twosix/ledger-mode-setup ()
+    (setq-local tab-always-indent 'complete)
+                (setq-local completion-cycle-threshold t)
+                (setq-local ledger-complete-in-steps t))
+
+    (use-package ledger-mode
+    :hook (ledger-mode . twosix/ledger-mode-setup))
+
+
 
 #+end_src
