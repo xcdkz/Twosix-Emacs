@@ -97,17 +97,37 @@
 
 #+end_src
 
-** Doom Themes
+** Doom Themes(disabled by default)
 
 #+begin_src emacs-lisp
-  (use-package doom-themes
-    :config
+;;  (use-package doom-themes
+;;    :config
     ;; Global Settings
-    (setq doom-themes-enable-bold t
-          doom-themes-enable-italic t)
-    (load-theme 'doom-solarized-light t)
+;;    (setq doom-themes-enable-bold t
+;;          doom-themes-enable-italic t)
+;;    (load-theme 'doom-solarized-light t)
     ;; Enable flashing mode-line on errors
-    (doom-themes-visual-bell-config))
+;;    (doom-themes-visual-bell-config))
+#+end_src
+
+** Distraction-Free Themes
+*** Commentary Theme (Default)
+[[https://github.com/pzel/commentary-theme][Github]]
+#+begin_src emacs-lisp
+
+  (use-package commentary-theme
+    :ensure t)
+  (load-theme 'commentary t)
+
+#+end_src
+
+*** Sorcery Theme
+[[https://github.com/mtreca/emacs-theme-sorcery][Github]]
+#+begin_src emacs-lisp
+
+(use-package sorcery-theme
+    :ensure t)
+
 #+end_src
 
 ** Helpful
@@ -429,6 +449,22 @@
   (use-package forge)
 
 #+end_src
+
+** LSP-Mode
+
+#+begin_src emacs-lisp
+
+(use-package lsp-mode
+    :commands (lsp lsp-deferred)
+    :init
+        (setq lsp-keymap-prefix "C-c l")
+    :config
+        (lsp-enable-which-key-integration t))
+
+#+end_src
+
+** Languages
+*** Python
 
 * Org-Mode
 ** Org

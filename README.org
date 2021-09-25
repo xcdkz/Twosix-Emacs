@@ -1,7 +1,8 @@
 * TwoSix Emacs
-In this repository I keep my private Emacs Configuration.
+TwoSix Emacs is a distraction-free emacs distribution which main mission is to provide a minimal, distraction-free(who would've guessed) Emacs Experience. Project is still in very early stages, so I wouldn't recommend using it as your normal day-to-day Emacs Distribution yet.
 
-The only dependency (for now) is the [[https://www.ibm.com/plex][IBM Plex]] font, which can be easily changed in config.org.
+The only external dependency (for now) is the [[https://www.ibm.com/plex][IBM Plex]] font, which can be easily changed in config.org.
 
 * TODOs
 - Add an automatic install command for this configuration
+- Search for more dark disctraction-free themes
